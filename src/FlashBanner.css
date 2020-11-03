@@ -1,0 +1,128 @@
+
+.banner-text-ended {
+  font-size: 800px;
+  color: white;
+  top: 5vh;
+  left: -500px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1; 
+  animation: banner-text-ended-animation 5s ease-in-out 1 alternate;
+}
+@keyframes banner-text-ended-animation {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+  25% {
+    background: orangered;
+  }
+  100% {
+    font-size: 250px;
+    left: 5%;
+    top: 25%;
+  }
+}
+
+
+.banner-text {
+  color: white;
+  font-size: 500px;
+  position: absolute;
+  top: 0;
+  left: 2000px;
+  height: 100px;
+  z-index: 1;
+  width: 100%;
+  white-space: nowrap;
+  animation: banner-animation 8s ease-in-out 1 alternate;
+}
+@keyframes banner-animation {
+  0% {
+
+  }
+  35% {
+    left: -4000px;
+  }
+  100% {
+    font-size: 1400px;
+    left: 2000px;
+    top: -200px;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.top-block {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  animation: top-block-expand 3s ease-in-out 1 forwards;
+}
+@keyframes top-block-expand {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20vh;
+  }
+}
+
+.top-block-close {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  animation: top-block-closing 3s ease-in-out 1 forwards;
+}
+@keyframes top-block-closing {
+  from {
+    height: 20vh;
+  }
+  to {
+    height: 0;
+  }
+}
+
+
+
+.bottom-block {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  animation: bottom-block-expand 3s ease-in-out 1 forwards;
+}
+@keyframes bottom-block-expand {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20vh;
+  }
+}
+
+.bottom-block-close {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  animation: bottom-block-closing 3s ease-in-out 1 forwards;
+}
+@keyframes bottom-block-closing {
+  from {
+    height: 20vh;
+  }
+  to {
+    height: 0;
+  }
+}
